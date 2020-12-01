@@ -51,7 +51,7 @@ header {
 
 h1 {
   font-family: "Baloo Da 2", cursive;
-font-size: 10vh;
+font-size: 4em;
 }
 
 
@@ -74,10 +74,10 @@ color:#530416;}
   height: 100vh;
   background-size: cover;
 }
-.hero-head {position: relative;
-top: 150px;
+.hero-head {
+top: 100px;
 left: 20px;
-line-height: 12vh;}
+line-height: 10vh;}
 
 .logo {
   margin: 0;
@@ -85,7 +85,9 @@ line-height: 12vh;}
 }
 
 .logo img {
-  height: 70px; width: 70px;}
+  height: 70px; width: 70px;
+}
+
 nav {
   position: absolute;
   text-align: left;
@@ -299,6 +301,21 @@ nav a:hover {
 /* ---------------- Hours ------------------ */
 
 
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:80.25%;
+  position:relative;
+  height:0;
+  width: 30vw;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 .hours {
   display: grid;
   grid-template-columns:  1fr 1fr;
@@ -308,11 +325,19 @@ nav a:hover {
   white-space: nowrap;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .hours {
+    grid-template-columns: 1fr;
+  }
+}
+
 .days {
 display: grid;
 grid-template-columns:  1fr 1fr;
 grid-gap: 50px;
 text-align: center;
+width: 35vw;
 }
 
 .day {
@@ -331,6 +356,8 @@ text-align: center;
   grid-template-columns:  1fr 2fr;
   grid-gap: 30px;
   text-align:left;
+  
+width: 35vw;
 }
 
 .contact p {
