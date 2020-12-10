@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/css-fadeshow.min.css">
   <title>Central PA Humane Society</title>
+  <meta name="description" content="Web Design IV Project: Non-Profit">
+  <meta name="author" content="Tiffany Byrne">
+  <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
@@ -18,21 +22,85 @@
     <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Ways to Help</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a data-scroll-nav="0">Home</a></li>
+        <li><a data-scroll-nav="1">About</a></li>
+        <li><a data-scroll-nav="2">Services</a></li>
+        <li><a data-scroll-nav="3">Contact</a></li>
+        <li><a data-scroll-nav="4">FAQ</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="hero">
-    <h1 class="hero-head">
-      COVID19:<br>Shelter open to limited access</h1>
-  </div>
+  <div class="hero" data-scroll-index="0">
 
+    <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
+
+      <!-- Radio -->
+      <input type="radio" name="css-fadeshow" id="fs-slide-1" />
+      <input type="radio" name="css-fadeshow" id="fs-slide-2" />
+      <input type="radio" name="css-fadeshow" id="fs-slide-3" />
+    
+      <!-- Slides -->
+      <div class="fs-slides">
+        <div class="fs-slide">
+          <div class="fs-slide-bg" style="background-image: url('imgs/mask.jpg');"></div>
+          
+          <div class="hero-txt">
+            <h1>Limited Access</h1>
+            <p>Due to COVID-19, the Central PA Humane society is open by appointment only.</p>
+            <a href="/" class="hero-button">Learn More</a>
+            </div>
+
+        </div>
+        <div class="fs-slide">
+          <div class="fs-slide-bg" style="background-image: url('imgs/adopt.jpg');"></div>
+          <div class="hero-txt"><h1>Adopt today</h1>
+            <p>The purr-fect companion is waiting for you!</p>
+            <a href="/" class="hero-button">Browse our pets</a>
+            </div>
+
+        </div>
+        <div class="fs-slide">
+          <div class="fs-slide-bg" style="background-image: url('imgs/donate.jpg');"></div>
+          <div class="hero-txt"><h1>Donations needed</h1>
+            <p>CPHS relies on the generosity of our community to be able to operate.</p>
+            <a href="/" class="hero-button">Donate</a>
+            </div>
+        </div>
+      </div>
+    
+      <!-- Quick Navigation -->
+      <div class="fs-quick-nav">
+        <label class="fs-quick-btn" for="fs-slide-1"></label>
+        <label class="fs-quick-btn" for="fs-slide-2"></label>
+        <label class="fs-quick-btn" for="fs-slide-3"></label>
+      </div>
+    
+      <!-- Prev Navigation -->
+      <div class="fs-prev-nav">
+        <label class="fs-prev-btn" for="fs-slide-1"></label>
+        <label class="fs-prev-btn" for="fs-slide-2"></label>
+        <label class="fs-prev-btn" for="fs-slide-3"></label>
+      </div>
+    
+      <!-- Next Navigation -->
+      <div class="fs-next-nav">
+        <label class="fs-next-btn" for="fs-slide-1"></label>
+        <label class="fs-next-btn" for="fs-slide-2"></label>
+        <label class="fs-next-btn" for="fs-slide-3"></label>
+      </div>
+    
+      <!-- Slide Counter (only one required) -->
+      <div class="fs-slide-counter">
+        <span class="fs-slide-counter-current"></span>/<span class="fs-slide-counter-total"></span>
+      </div>
+    
+    </div>
+
+    
+  </div>
   <!-- Intro -->
+<div  data-scroll-index="1"></div>
   <section>
     <div class="intro"><div>
     <p>
@@ -50,6 +118,7 @@
   </section>
 
   <!--- Services -->
+<div data-scroll-index="2"></div>
   <section>
   <div class="section-txt">
   <h2>Services</h2>
@@ -62,7 +131,7 @@
       <img src="imgs/icon_adopt.svg" class="box-icon" alt="Adoption" />
       <h3>Adoption</h3>
       <p>The primary goal of CPHS is to find loving homes for adoptable animals. If you’re looking for a wonderful life-long companion, then you’ve come to the right place! CPHS has many animals of every shape and size to choose from.</p>
-      <p><a href="#" class="box-link">Learn More →</a></p>
+      <p><a href="https://www.petfinder.com/search/pets-for-adoption/?shelter_id%5B0%5D=PA187" class="box-link" target="_blank" alt="View Our Pets">View Our Pets →</a></p>
     </div>
 
     <div class="box">
@@ -83,22 +152,22 @@
     <div class="box">
       <img src="imgs/icon_donate.svg" class="box-icon" alt="Adoption" />
       <h3>Donate</h3>
-      <p>It’s only through donations and fundraising efforts that we are able to do our job each day and bring hope to our many residents. We need the support of our community because CPHS receives little or no governmental support and depends almost entirely on our community and your generosity.</p>
-      <p><a href="#" class="box-link">Help Out →</a></p>
+      <p>It’s only through donations and fundraising efforts that we are able to do our job each day and bring hope to our many residents. <b>We need the support of our community</b> because CPHS receives little or no governmental support and depends almost entirely on our community and your generosity.</p>
+      <p><a href="/donate.html" class="box-link">Help Out →</a></p>
 
     </div>
 
     <div class="box">
       <img src="imgs/icon_lost.svg" class="box-icon" alt="Foster" />
       <h3>Lost & Found</h3>
-      <p>If you have lost or found an animal, please contact us at (814) 942-5402 as soon as possible to make a report to one of our staff members. This report includes a detailed description of your pet, the last place it was seen, and the best way to reach you in the event that your pet makes its way into the shelter.</p>
-      <p><a href="#" class="box-link">Contact Us →</a></p>
+      <p>If you have lost or found an animal, please contact us at <a href="tel:+1814-942-5402">(814) 942-5402</a> as soon as possible to make a report to one of our staff members. This report includes <b>a detailed description of your pet, the last place it was seen, and the best way to reach you</b> in the event that your pet makes its way into the shelter.</p>
+      <p><a href="tel:+1814-942-5402" class="box-link">Contact Us →</a></p>
     </div>
 
     <div class="box">
       <img src="imgs/icon_spay.svg" class="box-icon" alt="Volunteer" />
       <h3>Spay Days</h3>
-      <p>Spay Days is a low-cost spay/neuter program offered by us in conjunction with participating veterinarians and citizens concerned about the problem of companion animal overpopulation. It is designed to offer some financial support for loving, responsible pet owners who are not financially able to afford the entire cost of surgery.</p>
+      <p><b>Spay Days</b> is a low-cost spay/neuter program offered by us in conjunction with participating veterinarians and citizens concerned about the problem of companion animal overpopulation. It is designed to offer some financial support for loving, responsible pet owners who are not financially able to afford the entire cost of surgery.</p>
       <p><a href="#" class="box-link">Learn More →</a></p>
     </div>
 
@@ -113,15 +182,15 @@
     <div class="box">
       <img src="imgs/icon_capture.svg" class="box-icon" alt="Foster" />
       <h3>Trap-Neuter-Release</h3>
-      <p>To help control the feral cat overpopulation problem, CPHS offers Trap-Neuter-Release (TNR).  This is the recommended method nationwide for controlling feral cat colonies. TNR is a planned, humane program for bringing feral cats to the clinic for spaying or neutering and then the cats are released back to where they were found. TNR offers these cats a healthier life in the wild.</p>
+      <p>To help control the feral cat overpopulation problem, CPHS offers <b>Trap-Neuter-Release (TNR)</b>.  This is the recommended method nationwide for controlling feral cat colonies. TNR is a planned, humane program for bringing feral cats to the clinic for spaying or neutering and then the cats are released back to where they were found. TNR offers these cats a healthier life in the wild.</p>
       <p><a href="#" class="box-link">Learn More →</a></p>
     </div>
 
     <div class="box">
       <img src="imgs/icon_report.svg" class="box-icon" alt="Volunteer" />
       <h3>Report Cruelty/Neglect</h3>
-      <p>If reporting animal cruelty or neglect in Blair County please call our Humane Officer on (814) 942-3780 Monday to Friday 8.30am-5pm or send an email to cphs.policedepartment@gmail.com detailing your name and contact details, and a brief description of your complaint. Please include your contact details so that we may contact you about your complaint. Your information will remain confidential.</p>
-      <p><a href="#" class="box-link">Contact Us →</a></p>
+      <p>If reporting animal cruelty or neglect in Blair County, please call our Humane Officer at <a href="tel:+1814-942-3780">(814) 942-3780</a> on Monday to Friday 8:30am-5pm or send an email to <a href="mailto:cphs.policedepartment@gmail.com">cphs.policedepartment@gmail.com</a> detailing <b>your name and contact details</b>, and <b>a brief description of your complaint</b>. Please include your contact details so that we may contact you about your complaint. Your information will remain confidential.</p>
+      <p><a href="tel:+1814-942-3780" class="box-link">Contact Us →</a></p>
     </div>
   </div>
 </section>
@@ -129,6 +198,7 @@
 
 
   <!--- Hours & Location -->
+<div data-scroll-index="3"></div>
   <section>
     <div class="section-txt">
     <h2>Hours & Location</h2></div>
@@ -157,15 +227,15 @@
           Altoona, PA 16602 ​</p></div>
 
         <div><p class="contact-label">Phone:</p></div>
-        <div><p>(814) 942-5402</p></div>
+        <div><p><a href="tel:+1814-942-5402">(814) 942-5402</a></p></div>
         
         <div><p class="contact-label">Email:</p></div>
-        <div><p>info@centralpahumane.org</p></div>
+        <div><p><a href="mailto:info@centralpahumane.org">info@centralpahumane.org</a></p></div>
       </div>
 
 
-      <div>
-        <img src="imgs/shelter.jpg" style="width:100%; height:100%; object-fit: cover;">
+      <div class="cropped">
+        <img src="imgs/shelter.jpg" class="front-photo">
       </div>
 
       <div class="map-responsive">
@@ -177,26 +247,175 @@
   </section>
 
 
+  <!--- FAQ --->
+<div data-scroll-index="4"></div>
+  <section>
+    <div class="section-txt">
+      <h2>FAQ</h2>
+    </div>
+
+    <div class="faq">
+    <div>
+
+    <button class="accordion"><img src="imgs/print.svg">
+    Where does CPHS get the funding to operate?</button>
+    <div class="panel">
+    <p>CPHS is a non-profit organization, not a municipal or government agency, so we do not receive government funds other than fees for service. We rely solely on donations from our local community to serve our animals and community. We receive no funding from national organizations, such as HSUS or the ASPCA unless we apply for and receive grants.
+    </p>
+    </div>
+  
+    <button class="accordion"><img src="imgs/print.svg">
+    Is CPHS a "no-kill" shelter?</button>
+    <div class="panel">
+    <p>Some shelters promote that they are “no kill”, which may be misleading or unrealistic. In some cases, humane euthanasia may be necessary due to medical or behavior issues.
+    There is no time limit on how long we keep an animal; we do not euthanize based on length of stay. As long as an animal remains medically and behaviorally healthy, it will remain at our shelter until adoption. CPHS is designated as a no kill shelter as our euthanasia rate is well below the 10% required to be deemed no kill.
+    </p> </div>
+
+
+    <button class="accordion"><img src="imgs/print.svg">
+    What geographic area does CPHS serve?</button>
+    <div class="panel">
+    <p>CPHS primarily serves Blair County, PA.
+    </p> </div>
+
+    <button class="accordion"><img src="imgs/print.svg">
+    What type of animals does CPHS house?</button>
+    <div class="panel">
+    <p>The shelter residents include dogs, puppies, cats, kittens and small animals such as rabbits, guinea pigs, ferrets, and hamsters. We occasionally care for reptiles and pot bellied pigs.
+    </p>
+    </div>
+
+    <button class="accordion"><img src="imgs/print.svg">
+    What does a CPHS Adoption Package include?</button>
+    <div class="panel">
+    <p>Our adoption package includes spay/neuter surgery, first round of vaccinations (DHLPP & Bordetella for dogs), FVRCP for cats), a current rabies vaccination, deworming, leukemia & aids test (cats), a shelter ID tag (dogs) and a microchip.
+    </p>
+    </div>
+    
+    <button class="accordion"><img src="imgs/print.svg">
+    I need to surrender my pet, will you help me?</button>
+    <div class="panel">
+    <p>CPHS assists pet owners in every way possible to prevent them from having to give up their pet. Please call us at (814) 942-5402 so we can help you.
+    If you are unable to find a new home for your pet and need to surrender him, acceptance is dependent on space. We do request that you make an appointment before bringing your pet to us. Additionally, a $30 surrender fee is required.</p>
+    </div>
+    
+    <button class="accordion"><img src="imgs/print.svg">
+    There are stray pets in my neighborhood, will you pick them up?</button>
+    <div class="panel">
+    <p>For stray dogs please call your local Police, State Police or State Dog Warden. They will either arrange dispatch of a Humane Officer to pick up a stray dog or may be able to offer assistance.
+    There is no pick up service for stray cats, but if space allows we can take them into the shelter. Please call to check space availability before bringing a stray cat in.
+    </p>
+    </div>
+    
+    <button class="accordion"><img src="imgs/print.svg">
+    I need to put my pet to sleep, will you help me?</button>
+    <div class="panel">
+    <p>CPHS does not offer humane euthanasia for the public. We may be able to provide you with a number for a veterinarian in your area that can perform that service. We do have cremation service available for owned pets. Our fees vary based on the size of your pet. Please call our shelter at (814) 942-5402 for more information.
+    </p>
+    </div>
+  </div><div>
+    
+    <button class="accordion"><img src="imgs/print.svg">
+    I think someone is abusing/neglecting their pet, what do I do?</button>
+    <div class="panel">
+    <p>We encourage you to contact the CPHS Humane Officer at (814) 942-3780 to promptly investigate the situation. Complainant information is kept strictly confidential. If the situation is occurring in the City of Altoona, contact Officer Mike Daversa at (814) 949-2499.
+    </p>
+    </div>
+
+    <button class="accordion"><img src="imgs/print.svg">
+    Do you board animals?</button>
+    <div class="panel">
+    <p>No. CPHS provides services for stray and surrendered animals in our community.
+    </p></div>
+
+
+    <button class="accordion"><img src="imgs/print.svg">
+    Does CPHS provide Free or Low-Cost Verterinary care?</button>
+    <div class="panel">
+    <p>CPHS does NOT offer veterinarian services for the public. We have a contract veterinarian that services shelter animals only.
+    </p>
+    </div>
+
+  
+    <button class="accordion"><img src="imgs/print.svg">
+    How can I help the shelter animals at CPHS?</button>
+    <div class="panel">
+    <p>There are many ways you can help the animals. CPHS has a “wish list” of items regularly used to care for our animals. Donations of your time as a volunteer helps CPHS achieve the tasks needed to operate the shelter and take care of the animals.
+    Donations of money help to offset the costs of operating the shelter, such as paying for utilities or buying supplies that haven’t been donated. And, if and when you are able, adopt your next pet from CPHS.</p>
+    </div>
+
+
+    <button class="accordion"><img src="imgs/print.svg">
+    I'd like to volunteer at CPHS; what jobs are available?</button>
+    <div class="panel">
+    <p>There are many jobs that you can do, and we welcome you! Opportunities include cage cleaning, clerical duties, laundry, fundraising events, animal socializing, and photography for website and Petfinder account. Please contact our Volunteer Coordinator at (814) 942-5402, for more details.</p>
+    </div>
+
+    
+    <button class="accordion"><img src="imgs/print.svg">
+    What can I do to help control the community's pet overpopulation?</button>
+    <div class="panel">
+    <p>Quite simply, CPHS encourages that you spay or neuter your pets. Monetary donations to our Spay Days program helps us provide lost cost spay / neuter surgeries to pet owners with financial difficulty.
+      Also, we respectfully request that you adopt pets from animal shelters. In many cases, we have purebred and “designer” dogs and cats waiting for new homes.</p>
+    </div>
+
+  
+    <button class="accordion"><img src="imgs/print.svg">
+    What advice would you give a new pet owner?</button>
+    <div class="panel">
+    <p>First and foremost, spay or neuter your pet. Take the time to research the breed of animal prior to adopting, since pet ownership is a lifelong commitment.
+        Keep your pet up-to-date on all vaccines, not just rabies. Annual checkups are encouraged to keep your pet as healthy as possible.
+        Give your pet time to adjust in his new home, and promptly correct behavior issues that may arise. There are many resources to help you with this.
+        Make time for exercise and for play.
+        Keep ID on your pet at all times, or have your pet microchipped. Also, take pictures of your pet from various angles to help identify your pet if he ever becomes lost.
+        Last, but not least, appreciate the unconditional love your pet can bring you!</p>
+    </div>
+  
+</div>
+      
+    </div>
+  </section>
+
+
   <footer>
-    <div class="footer-box">
+    <div>
       <p>© 2020 by Central PA Humane Society. All Rights Reserved.</p>
 
       <p>Link | Link | Link | Link | Link</p>
     </div>
 
-    <div class="footer-box">
+    <div>
       <p>1837 East Pleasant Valley Blvd., Altoona, PA 16602</p>
       <p>(814) 942-5402 | info@centralpahumane.org</p>
     </div>
 
-    <div class="footer-box">
+    <div class="sponsors">
 
       <p>Sponsored by:</p>
+      <img src="imgs/sponsors/01altoona-honda.png" alt="Altoona Honda" title="Altoona Honda" height=70px>
+      <img src="imgs/sponsors/02blair-roofing.png" alt="Blair Roofing" title="Blair Roofing" height=50px style="margin-bottom: 10px;">
+      <img src="imgs/sponsors/03petco.png" alt="Petco"  title="Petco" height=40px style="margin-bottom:15px;">
+      <img src="imgs/sponsors/04harley.png" alt="Roundhouse Harley-Davidson of Altoona"  title="Roundhouse Harley-Davidson of Altoona" height=80px style="margin-top:15px;">
+      <img src="imgs/sponsors/05albemarle.png" alt="Albemarle Corporation"  title="Albemarle Corporation" height=30px style="margin-bottom:17px;">
+      <img src="imgs/sponsors/06altoonahearing.png" alt="Altoona Professional Hearing Aid Center"  title="Altoona Professional Hearing Aid Center" height=40px style="margin-bottom:15px;">
+      <img src="imgs/sponsors/07delgrossos.png" alt="Delgrosso's Amusement Park"  title="Delgrosso's Amusement Park" height=70px>
+      <img src="imgs/sponsors/08coldwell.png" alt="Coldwell Banker Realty"  title="Coldwell Banker Realty" height=70px>
+      <img src="imgs/sponsors/09lang.png" alt="Lang & Sons Construction"  title="Lang & Sons Construction" height=70px>
+      <img src="imgs/sponsors/10bergergreen.png" alt="Berger & Green Attorneys at Law"  title="Berger & Green Attorneys at Law" height=70px>
+    
+    
+    
     </div>
-  </section>
+
 
   </footer>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/scrollIt.min.js" type="text/javascript"></script>
+
+  
 </body>
 
 </html>
