@@ -310,14 +310,9 @@ textarea {
   opacity: .6;
 }
 
-.radio {
-}
 
 .radio label {margin-right:20px;
-margin-left: 0;}
-}
-
-.checkbox-selections {
+margin-left: 0;
 }
 
 .submit-btn {
