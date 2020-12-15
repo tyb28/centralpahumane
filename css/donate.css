@@ -266,11 +266,6 @@ nav a:hover {
 
 /* ---------------------------------- */
 
-section {background-image: url('../imgs/yay.png');
-background-size: cover;
-background-position: top;
-background-repeat: no-repeat;}
-
 
 .container {
   text-align: left;
@@ -382,9 +377,6 @@ label {
 
 
 @media screen and (max-width: 600px) {
-  section {
-    background-size: 100% auto;
-  }
 
   form {
     width: 80vw;
