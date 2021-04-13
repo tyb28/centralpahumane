@@ -410,6 +410,10 @@ footer a {
 
 .sponsors {grid-column: 1 / 3;}
 
+.sponsors img {margin-right: 30px;
+zoom: 70%;
+text-align: center;}
+
 @media screen and (max-width: 600px) {
   footer {
     grid-template-columns: 1;
